@@ -93,3 +93,51 @@ print(result)
 # l'inégalité (ou différence)
 result = 123 != 42
 print(result)
+
+# les encadrements avec < > <= >=
+my_number = random.randint(0, 100)
+print(my_number)
+result = 0 <= my_number < 50
+print(result)
+result = 50 < my_number <= 100
+print(result)
+
+# opérateur and (et)
+result = True and False # False
+print(result)
+result = False and True # False
+print(result)
+result = True and True # True
+print(result)
+result = False and False # False
+print(result)
+
+# opérateur or (ou)
+result = True or False # True
+print(result)
+result = False or True # True
+print(result)
+result = True or True # True
+print(result)
+result = False or False # False
+print(result)
+
+# oprateur not (négation)
+result = not True
+print(result)
+result = not False
+print(result)
+
+# on peut utiliser d'autres type de données que l'on converti en booléen avec les opérateur booléens 
+a = random.randint(0, 1)
+b = random.randint(0, 1)
+result = bool(a) and bool(b)
+# print(a, b)
+# print(result)
+
+# utilisation un peu "spéciales" des comparaisons de grandeur
+result = "abc" < "bcd"
+# print(result)
+
+result = "A" < "a"
+# print(result)
