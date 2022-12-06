@@ -111,11 +111,57 @@ foo = 3.14
 foo = str(foo)
 print(type(foo))
 
-# 
-foo = 2.71
-# récupérer la partie entière (c-à-d 2)
-a = 
-# récupérer la partie après les virgule (c-à-d 0.71)
-b = 
-print(a)
-print(b)
+# # 
+# foo = 2.71
+# # récupérer la partie entière (c-à-d 2)
+# a = 
+# # récupérer la partie après les virgule (c-à-d 0.71)
+# b = 
+# print(a)
+# print(b)
+
+# transtypage == type casting == conversion d'un type de données
+
+# 0 donne False et tous les autres nombres donnent True 
+my_number7 = 0
+# conversion explicite en booléen
+print(bool(my_number7))
+
+# conversion implicite en booléen
+if my_number7:
+    print("L'utilisateur a mis autre chose que zéro")
+else:
+    print("L'utilisateur a mis zéro")
+
+my_text8 = ''
+# conversion explicite en booléen
+print(bool(my_text8))
+
+# conversion implicite en booléen
+if my_text8:
+    print("L'utilisateur a écrit quelque chose")
+else:
+    print("L'utilisateur n'a rien écrit")
+
+# listes
+fruits = ['ananas', 'banane', 'cerise']
+
+# opérateur d'inclusion
+result = 'ananas' in fruits
+print(result)
+result = 'fraise' in fruits
+print(result)
+
+# conversion explicite en booléen
+result = bool(fruits)
+print(result)
+
+# conversion implicite en booléen
+if fruits:
+    print("La liste contient des éléments")
+else:
+    print("La liste ne contient aucun élément")
+
+# conversion explicite en booléen
+# mais attention None ne peut être converti en int ou float
+print(bool(None))
