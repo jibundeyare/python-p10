@@ -95,3 +95,21 @@ my_list1 = my_text9.split()
 print(my_list1)
 # la fonction len() peut aussi être utilisée avec des listes pour compter le nombre d'éléments
 print(len(my_list1))
+
+# accès en lecture au 0ème caractère de la str
+print(my_text9[0])
+
+# accès en écriture interdit
+# my_text9[0] = 'A'
+
+# accès en lecture du 0ème au 10ème caractère de la str
+print(my_text9[0:10])
+
+# accès en lecture du 10ème caractère à la fin de la str
+print(my_text9[10:])
+
+# accès en lecture par la fin de la str
+print(my_text9[::-1])
+
+# accès en lecture 1 caractère sur 2 de la str
+print(my_text9[::2])
