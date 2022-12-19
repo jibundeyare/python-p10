@@ -141,3 +141,9 @@ result = "abc" < "bcd"
 
 result = "A" < "a"
 # print(result)
+
+fruits = ['abricot', 'baie', 'cerise']
+result = 'ananas' in fruits
+print(result)
+result = 'cerise' in fruits
+print(result)
