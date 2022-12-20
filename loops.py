@@ -42,8 +42,16 @@ for counter in range(10, 0, -1):
 fruits = ['abricot', 'baie', 'cerise']
 
 # boucle de type for each == pour chaque
+for fruit in fruits:
+    print(fruit)
+
+# boucle de type for each == pour chaque
+# avec index
 for i, fruit in enumerate(fruits):
     print(f'{i + 1}: {fruit}')
+
+for i in range(0, len(fruits), -1):
+    print(fruits[i])
 
 # reversed() renvoie un itérateur économe en mémoire
 print(reversed(fruits))
@@ -75,3 +83,15 @@ for item in my_list:
     accumulateur += item
 
 print(f'{accumulateur = }')
+
+my_array = [
+    ['a', 'c'],
+    ['b', 'd']
+]
+
+# une boucle for dans une boucle for
+# len(my_array) me donne le nombre de lignes
+for i in range(0, len(my_array)):
+    # len(my_array[0]) me donne le nombre de colonne
+    for j in range(0, len(my_array[0])):
+        print(i, j, my_array[i][j])
