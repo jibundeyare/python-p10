@@ -1,3 +1,5 @@
+from collections.abc import Callable
+
 def addition(a: float, b: float) -> float:
     """Cette fonction permet d'additionner deux nombres
 
@@ -17,7 +19,7 @@ my_number2 = 42
 result = addition(my_number1, my_number2)
 print(result)
 
-def calculer(calcul1: callable, calcul2: callable, a: float, b: float, c: float) -> float:
+def calculer(calcul1: Callable, calcul2: Callable, a: float, b: float, c: float) -> float:
     result = calcul1(a, b)
     result = calcul2(result, c)
 
