@@ -1,5 +1,6 @@
 // pour exécuter le script: nodejs for-loop.js
 
+// équivalent d'une boucle for avec range() en python
 // boucle de type for == pour
 // i++ est équivalent à i += 1
 for (let i = 0; i < 10; i++) {
